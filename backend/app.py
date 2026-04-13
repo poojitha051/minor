@@ -1,14 +1,22 @@
 import os
 import io
 import json
-import numpy as np
+import sys
 from datetime import datetime
+
+import numpy as np
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from PIL import Image
 
-# Set legacy Keras mode for TF compatibility
-os.environ['TF_USE_LEGACY_KERAS'] = '1'
+# Windows consoles often default to cp1252; avoid UnicodeEncodeError on emoji logs.
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+# TensorFlow runtime options
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 app = Flask(__name__)

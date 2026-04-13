@@ -5,8 +5,13 @@
 import { Platform } from "react-native";
 import axios from "axios";
 
+
 /** Replace with your machine's IP (e.g. 192.168.1.10) for real devices on the same Wi‑Fi. */
 export const API_HOST = "192.168.0.7";
+
+/** Your PC's LAN IP — same Wi‑Fi as the phone. Change if your IP changes. */
+export const API_HOST = "10.100.11.87";
+
 
 export const API_PORT = "5000";
 
