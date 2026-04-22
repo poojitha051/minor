@@ -10,7 +10,7 @@ import axios from "axios";
 export const API_HOST = "192.168.0.7";
 
 /** Your PC's LAN IP — same Wi‑Fi as the phone. Change if your IP changes. */
-export const API_HOST = "10.100.11.87";
+export const API_HOST = "10.100.13.70";
 
 
 export const API_PORT = "5000";

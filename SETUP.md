@@ -24,7 +24,7 @@ Copy `backend/.env.example` to `backend/.env` and set:
 
 Place your trained Keras model at:
 
-`backend/model/tomato_disease_model_final.h5`
+`backend/model/best_tomato_model.keras`
 
 It should match **11 classes** in `class_names.json`, **224×224** RGB input, trained with **pixel values in \[0, 1\]** (divide by 255), consistent with `app.py` preprocessing.
 

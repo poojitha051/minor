@@ -19,3 +19,4 @@ Thumbs.db
 
 # Large model weights (keep locally)
 backend/model/*.h5
+backend/model/*.keras
