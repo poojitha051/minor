@@ -1,1 +1,1 @@
-# Place tomato_disease_model_final.h5 in this folder (MobileNetV2, 11 classes, 224×224 input).
+# Place best_tomato_model.keras in this folder (MobileNetV2, 11 classes, 224×224 input).
